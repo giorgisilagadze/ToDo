@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: url("./todo-app-main/images/bg-mobile-light.jpg");
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 327px;
+    margin: 48px auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+}
+
+.div-input {
+    position: relative;
+    width: 327px;
+    margin: 40px auto 0px;
+}
+
+input {
+    position: absolute;
+    width: 275px;
+    height: 12px;
+    padding: 20px 0px 18px 52px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.17px;
+    color: #494C6B;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.div-input-circle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 14px;
+    left: 20px;
+    border: solid 1px grey; 
+}
+
+.main-div {
+    width: 327px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 104px auto 0px;
+    background-color: white;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.div-items-left {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px 22px;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.p-left {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.17px;
+    color: #9495A5;
+}
+
+.p-clear {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.17px;
+    color: #9495A5;
+    cursor: pointer;
+}
+
+.div-filter {
+    width: 167px;
+    margin: 38px auto 0px;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+    padding: 15px 80px 19px;
+    display: flex;
+    gap: 18px;
+}
+
+.p-filter {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.19px;
+    color: #9495A5;
+    cursor: pointer;
+}
+
+footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.19px;
+    color: #9495A5;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.todo-style {
+    
+}
