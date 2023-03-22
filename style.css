@@ -7,6 +7,8 @@
 body {
     background-image: url("./todo-app-main/images/bg-mobile-light.jpg");
     background-repeat: no-repeat;
+    background-position: center -10px;
+    background-size: 100% 185px;
 }
 
 header {
@@ -16,9 +18,15 @@ header {
     justify-content: space-between;
 }
 
+.light-dark-div {
+    height: 20px;
+    position: relative;
+}
+
 .moon {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .div-input {
@@ -65,7 +73,6 @@ input:focus {
 
 .main-div {
     width: 327px;
-    height: 30px;
     border-radius: 5px;
     margin: 104px auto 0px;
     background-color: white;
@@ -77,6 +84,8 @@ input:focus {
     justify-content: space-between;
     padding: 16px 20px 22px;
     box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .p-left {
@@ -104,9 +113,32 @@ input:focus {
     padding: 15px 80px 19px;
     display: flex;
     gap: 18px;
+    background-color: white;
 }
 
-.p-filter {
+.div-filter-2 {
+    display: none;
+}
+
+.p-filter-all {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.19px;
+    color: #9495A5;
+    cursor: pointer;
+}
+
+.p-filter-active {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.19px;
+    color: #9495A5;
+    cursor: pointer;
+}
+
+.p-filter-completed {
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
@@ -125,6 +157,188 @@ footer {
     margin-top: 40px;
 }
 
-.todo-style {
+.todo-s {
+    width: 275px;
+    height: 12px;
+    padding: 19px 0px 21px 52px;
+    background-color: white;
+    border-bottom: solid 1px #E3E4F1;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.17px;
+    color: #494C6B;
     
 }
+
+.div-input-circle-2 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 14px;
+    left: 20px;
+    border: solid 1px grey; 
+    z-index: 98;
+    cursor: pointer;
+}
+
+.icon-check {
+    position: absolute;
+    top: 19.5px;
+    left: 24.67px;
+    cursor: pointer;
+}
+
+.icon-cross {
+    position: absolute;
+    top: 17px;
+    left: 294.88px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url("./todo-app-main/images/bg-desktop-light.jpg");
+        background-size: 100% 295px;
+    }
+
+    header {
+        width: 540px;
+        margin: 70px auto 0px;
+    }
+
+    .todo-logo {
+        width: 167px;
+        height: 30px;
+    }
+
+    .moon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .div-input {
+        width: 540px;
+        margin: 48px auto 0px;
+    }
+
+    input {
+        position: absolute;
+        width: 468px;
+        height: 18px;
+        padding: 23px 0px 23px 72px;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.25px;
+        color: #393A4B;
+        box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .div-input-circle {
+        width: 24px;
+        height: 24px;
+        top: 18px;
+        left: 24px;
+        border: solid 1px grey; 
+    }
+
+    .main-div {
+        width: 540px;
+        border-radius: 5px;
+        margin: 136px auto 0px;
+    }
+
+    .div-items-left {
+        padding: 20px 20px 22px;
+    }
+
+    .p-left {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: -0.19px;
+    }
+    
+    .p-clear {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: -0.19px;
+    }
+
+    .p-clear:hover {
+        color: #494C6B;
+    }
+
+    .div-filter {
+        display: none;
+    }
+    .div-filter-2 {
+        display: block;
+        width: 166px;
+        margin: 0px auto 0px;
+        box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+        border-radius: 5px;
+        display: flex;
+        gap: 18px;
+    }
+
+    .p-filter-all:hover {
+        color: #494C6B;
+    }
+    
+    .p-filter-active:hover {
+        color: #494C6B;
+    }
+
+    .p-filter-completed:hover {
+        color: #494C6B;
+    }
+
+    footer {
+        margin-top: 49px;
+    }
+
+    .todo-s {
+        width: 468px;
+        height: 12px;
+        padding: 21px 0px 24px 72px;
+        background-color: white;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.25px;
+        color: #494C6B;
+    }
+
+    .div-input-circle-2 {
+        width: 24px;
+        height: 24px;
+        top: 18px;
+        left: 24px;
+    }
+    
+    .icon-check {
+        position: absolute;
+        top: 25.5px;
+        left: 31.67px;
+        cursor: pointer;
+    }
+    
+    .icon-cross {
+        position: absolute;
+        top: 20px;
+        left: 498px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+}   

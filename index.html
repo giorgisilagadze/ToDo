@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="./todo-app-main/images/TODO.png" alt="">
+        <img src="./todo-app-main/images/TODO.png" alt="" class="todo-logo">
         <img src="./todo-app-main/images/icon-moon.svg" alt="" class="moon">
     </header>
 
@@ -20,19 +20,24 @@
     </div>
 
     <div class="main-div">
-        <div class="todo-s">
+        <div id="target-div">
 
         </div>
         <div class="div-items-left">
-            <p class="p-left">0 items left</p>
-            <p class="p-clear">Clear Completed</p>
+            <p class="p-left"><span id="count">0</span> items left</p>
+            <div class="div-filter-2">
+                <p class="p-filter-all">All</p>
+                <p class="p-filter-active">Active</p>
+                <p class="p-filter-completed">Completed</p>
+            </div>
+            <p class="p-clear" id="clear-completed">Clear Completed</p>
         </div>
     </div>
 
     <div class="div-filter">
-        <p class="p-filter">All</p>
-        <p class="p-filter">Active</p>
-        <p class="p-filter">Completed</p>
+        <p class="p-filter-all">All</p>
+        <p class="p-filter-active">Active</p>
+        <p class="p-filter-completed">Completed</p>
     </div>
 
     <footer>Drag and drop to reorder list</footer>
