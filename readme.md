@@ -31,3 +31,8 @@ Your users should be able to:
 ### What I learned
 
 I've learned how to create HTML element by JS and how to control styles of body by using JS as well.
+
+## Links
+
+- Solution URL: https://github.com/giorgisilagadze/ToDo;
+- Live Site URL: https://to-do-delta-nine.vercel.app;
